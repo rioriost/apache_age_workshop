@@ -86,7 +86,7 @@ Actual data is stored in each relations.
 
 For node:
 ```sql
-ELECT * FROM "Airroute"."Airport" LIMIT 2;
+SELECT * FROM "Airroute"."Airport" LIMIT 2;
        id        |                                                                                      properties
 -----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  844424930131969 | {"city": "Atlanta", "code": "ATL", "name": "Hartsfield-Jackson Atlanta International Airport", "country": "USA", "latitude": 33.6367, "longitude": -84.4281, "passengers": 107394029}

@@ -161,4 +161,4 @@ AS (plan text);
 
 これははるかに好ましい実行計画であり、クエリプランナーが`WHERE`句が使用されるときにカスタムインデックスを利用することを示しています。
 
-[前：CypherクエリとAGE](05_cypher_ja.md)
+[前：CypherクエリとAGE](05_cypher_ja.md) | [次: 書き換え](07_rewriting_ja.md)

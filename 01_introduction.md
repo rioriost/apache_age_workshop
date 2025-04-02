@@ -31,7 +31,7 @@ WHERE u.name = 'Alice';
 ```
 
 With Cypher query:
-```
+```cypher
 MATCH (u:User {name: 'Alice'})-[:FRIEND]->(:User)-[:FRIEND]->(fof)
 RETURN DISTINCT fof.name
 ```

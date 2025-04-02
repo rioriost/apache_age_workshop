@@ -3,7 +3,7 @@
 Apache AGEでのCypherクエリの表現は、**標準**のCypherとは異なります。
 
 例えば、標準的なCypher：
-```sql
+```cypher
 MATCH (n)-[r]->(m) RETURN n, r, m
 ```
 
@@ -52,7 +52,7 @@ AS句は、PostgreSQLにクエリの出力で何を期待するかを伝えま�
 
 AS句で宣言された列の数は、CypherクエリのRETURN句で返される項目の数と完全に一致しなければなりません。例えば、あなたのCypherクエリが複数の要素を返す場合：
 
-```sql
+```cypher
 MATCH (a)-[r:KNOWS]->(b) RETURN a, r, b
 ```
 
@@ -108,7 +108,7 @@ APOCは一般的にNeo4jと一緒に使用され、Cypherの機能を拡張し�
 Apache AGE 1.5の時点では、AGEは単一のノードに複数のラベルを割り当てることをサポートしていません。
 
 **Neo4j**では、複数のラベル（例えば、`Person`と`Employee`）を持つノードを作成することが可能です：
-```sql
+```cypher
 CREATE (:Person:Employee {name: 'Alice', age: 30})
 ```
 

@@ -3,7 +3,7 @@
 The representation of Cypher queries in Apache AGE differs from **standard** Cypher.
 
 For example, a standard Cypher like:
-```sql
+```cypher
 MATCH (n)-[r]->(m) RETURN n, r, m
 ```
 
@@ -52,7 +52,7 @@ The AS clause tells PostgreSQL what to expect in the output of the query:
 
 The count of columns declared in the AS clause must exactly match the items returned in the Cypher query’s RETURN clause. For example, if your Cypher query returned multiple elements:
 
-```sql
+```cypher
 MATCH (a)-[r:KNOWS]->(b) RETURN a, r, b
 ```
 
@@ -108,7 +108,7 @@ As mentioned in [Objects](04_objects.md), `agtype` is a superset of `jsonb`. Thi
 As of Apache AGE 1.5, AGE does not support assigning multiple labels to a single node.
 
 In **Neo4j**, creating a node with multiple labels (e.g., `Person` and `Employee`) is valid:
-```sql
+```cypher
 CREATE (:Person:Employee {name: 'Alice', age: 30})
 ```
 

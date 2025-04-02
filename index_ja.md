@@ -6,3 +6,4 @@
 4. [オブジェクト](04_objects_ja.md)
 5. [AGE での Cypher クエリ](05_cypher_ja.md)
 6. [インデックス作成](06_indexing_ja.md)
+7. [書き換え](07_rewriting_ja.md)

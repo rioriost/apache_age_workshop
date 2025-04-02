@@ -162,4 +162,4 @@ AS (plan text);
 
 This is a much more favorable execution plan, demonstrating that the query planner does utilize the custom index when the `WHERE` clause is used.
 
-[Prev: Cypher Query with AGE](05_cypher.md)
+[Prev: Cypher Query with AGE](05_cypher.md) | [Next: Rewriting](07_rewriting.md)
